@@ -1,0 +1,25 @@
+page-start {
+
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btnInsrt {
+    background-color:#46C5B5; /* Green */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 10%;
+    cursor: pointer;
+  }

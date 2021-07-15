@@ -1,0 +1,44 @@
+page-slide5 {
+    .btnNameS5 {
+      background-color:#46C5B5; /* Green */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left: 50%;
+    margin-top: 5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+      }
+      .centerS5 {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .centerBTN {
+        background-color:#46C5B5; /* Green */
+        border: none;
+        border-radius: 25px;
+        color: white;
+        margin: 0;
+        margin-top: 5%;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .btnNextHomeS5 {
+        background-color:#46C5B5; /* Green */
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+}

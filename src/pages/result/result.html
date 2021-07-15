@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
+<ion-content style="background-color: #20E4F0;">
+  <h3 style="font-family:'Bowlby One SC';text-align: center; margin-top: 20%; color: white;">Result</h3>
+  <!-- <ion-item>
+		<ion-input type="text" [(ngModel)]="taskName" placeholder="Enter task"></ion-input>
+		<div class="item-note" item-end>
+			<button ion-button (click)="addTask()"><ion-icon name="add"></ion-icon></button>
+		</div>
+	</ion-item> -->
+  <div class="centerResult" style="font-family: 'Arvo';font-weight: bold;">
+	{{this.userData.Question.length > 0 ? this.userData.Question[0].pertayaan : ''}}<br>{{this.userData.answerQ1[0]}}<br><br>
+	{{this.userData.Question.length > 0 ? this.userData.Question[1].pertayaan : ''}}<br>{{this.userData.answerQ1[1]}}<br><br>
+	{{this.userData.Question.length > 0 ? this.userData.Question[2].pertayaan : ''}}<br>{{this.userData.answerQ1[2]}}<br><br>
+	{{this.userData.Question.length > 0 ? this.userData.Question[3].pertayaan : ''}}<br>{{this.userData.answerQ1[3]}}<br><br>
+	{{this.userData.Question.length > 0 ? this.userData.Question[4].pertayaan : ''}}<br>{{this.userData.answerQ1[4]}}<br><br>
+	
+	</div>
+</ion-content>
+<ion-footer>
+  <div class="btn-wrapper">
+    <button  style="font-family:'Bowlby One SC';" class="btnDone" ion-button block>Selesai</button>
+  </div>
+</ion-footer>

@@ -1,3 +1,26 @@
 page-home {
-
+  .centerDivHome {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    left: 50%;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 300px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+.btn-wrapper {
+    text-align: center;
+    align-items: center;
 }
+.btnNextHome {
+    background-color:#46C5B5; /* Green */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
