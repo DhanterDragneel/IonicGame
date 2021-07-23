@@ -6,19 +6,22 @@
 -->
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
-<ion-content  style="background-color: #20E4F0; ">
-  <div style="position: absolute; top: 20%;">
-    <h2 style="font-family: 'Bowlby One SC'; color: white; position: relative; top: 0%; margin: 0;text-align: center;">{{this.userData.Question.length > 0 ? this.userData.Question[4].pertayaan : ''}}</h2><br>
+<ion-content  style="background-image: url(../assets/imgs/SlideBg.png); background-repeat: no-repeat; background-size: 100% 100%; ">
+  <div style="position: absolute; top: 10%;">
+    <h2 style="font-family: 'Bowlby One SC'; color: white; position: relative; top: 0%; margin: 0;text-align: center;">{{this.userData.Question.length > 0 ? this.userData.Question[4].pertayaan : ''}}</h2><br><br><br><br>  
+  
     <!-- <ion-item>
       <ion-input type="text" [(ngModel)]="taskName" placeholder="Enter task"></ion-input>
       <div class="item-note" item-end>
         <button ion-button (click)="addTask()"><ion-icon name="add"></ion-icon></button>
       </div>
     </ion-item> -->
+    
+  
     <ion-list *ngFor="let todo of this.userData.userdata;let i = index ">
-    <button class="btnNameS5" style="width: 350px; font-family:'Bowlby One SC';" (click)="pushAnswer(i)" ion-button >{{todo}}</button>
-    </ion-list>
-  </div>
+      <button class="btnNameS1" style="font-family:'Bowlby One SC';" (click)="pushAnswer(i)" ion-button block>{{todo}}</button>
+      </ion-list>
+    </div>
 </ion-content>
 <!-- <ion-footer>
   <div class="btn-wrapper">

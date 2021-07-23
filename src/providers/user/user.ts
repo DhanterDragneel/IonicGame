@@ -13,6 +13,10 @@ export class UserProvider {
   public answerQ1=[];
   postQuestion:any;
   public Question=[];
+  postOption:any;
+  public Option=[];
+  postStory:any;
+  public Story=[];
 
 
   constructor(public authProvider:AuthProvider) {
@@ -34,5 +38,38 @@ export class UserProvider {
        // loading.dismiss();
      });
  }
+ GetOption(){
+  this.authProvider.GetData('Option')
+   .subscribe(res => {
+     this.postOption=res;
+     if(this.postOption.Option){
+       this.Option=this.postOption.Option;
+     }
+     else{ 
+       // this.Question="";
+       // loading.dismiss();
+    }         
+   }, err => {
+     console.log(err);
+     // loading.dismiss();
+   });
+}
+GetStory(){
+  this.authProvider.GetData('Story')
+   .subscribe(res => {
+     this.postStory=res;
+     if(this.postStory.Story){
+       this.Story=this.postStory.Story;
+     }
+     else{ 
+       // this.Question="";
+       // loading.dismiss();
+    }         
+   }, err => {
+     console.log(err);
+     // loading.dismiss();
+   });
+}
+ 
 
 }

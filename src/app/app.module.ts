@@ -16,6 +16,13 @@ import { StartPage } from '../pages/start/start';
 import { ResultPage } from '../pages/result/result';
 import { UserProvider } from '../providers/user/user';
 import { AuthProvider } from '../providers/auth/auth';
+import { Typeoption1Page } from '../pages/typeoption1/typeoption1';
+import { Story1Page } from '../pages/story1/story1';
+import { Typeoption2Page } from '../pages/typeoption2/typeoption2';
+import { Story2Page } from '../pages/story2/story2';
+import { Typeoption3Page } from '../pages/typeoption3/typeoption3';
+import { Story3Page } from '../pages/story3/story3';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +34,13 @@ import { AuthProvider } from '../providers/auth/auth';
     Slide3Page,
     Slide4Page,
     Slide5Page,
-    ResultPage
+    ResultPage,
+    Typeoption1Page,
+    Typeoption2Page,
+    Story1Page,
+    Story2Page,
+    Story3Page,
+    Typeoption3Page
   ],
   imports: [
     BrowserModule,
@@ -45,7 +58,13 @@ import { AuthProvider } from '../providers/auth/auth';
     Slide3Page,
     Slide4Page,
     Slide5Page,
-    ResultPage
+    ResultPage,
+    Typeoption1Page,
+    Typeoption2Page,
+    Story1Page,
+    Story2Page,
+    Story3Page,
+    Typeoption3Page
   ],
   providers: [
     StatusBar,

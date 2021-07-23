@@ -1,0 +1,16 @@
+page-story1 {
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .btnNextHome {
+        background-color:#3230B0; /* Green */
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+}

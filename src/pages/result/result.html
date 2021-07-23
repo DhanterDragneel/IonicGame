@@ -1,24 +1,69 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
-<ion-content style="background-color: #20E4F0;">
-  <h3 style="font-family:'Bowlby One SC';text-align: center; margin-top: 20%; color: white;">Result</h3>
-  <!-- <ion-item>
-		<ion-input type="text" [(ngModel)]="taskName" placeholder="Enter task"></ion-input>
-		<div class="item-note" item-end>
-			<button ion-button (click)="addTask()"><ion-icon name="add"></ion-icon></button>
-		</div>
-	</ion-item> -->
-  <div class="centerResult" style="font-family: 'Arvo';font-weight: bold;">
-	{{this.userData.Question.length > 0 ? this.userData.Question[0].pertayaan : ''}}<br>{{this.userData.answerQ1[0]}}<br><br>
-	{{this.userData.Question.length > 0 ? this.userData.Question[1].pertayaan : ''}}<br>{{this.userData.answerQ1[1]}}<br><br>
-	{{this.userData.Question.length > 0 ? this.userData.Question[2].pertayaan : ''}}<br>{{this.userData.answerQ1[2]}}<br><br>
-	{{this.userData.Question.length > 0 ? this.userData.Question[3].pertayaan : ''}}<br>{{this.userData.answerQ1[3]}}<br><br>
-	{{this.userData.Question.length > 0 ? this.userData.Question[4].pertayaan : ''}}<br>{{this.userData.answerQ1[4]}}<br><br>
-	
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<ion-content [fullscreen]="true" style="background-image: url(../assets/imgs/SlideBg3.png); background-repeat: no-repeat; background-size: 100% 100%">
+	<h3 style="font-family:'Bowlby One SC';text-align: center; margin-top: 50%; color: white;">Hasil</h3>
+<ion-slides  pager="true">	
+	<ion-slide>
+		<div padding class="centerResult" style="font-family: 'Black Han Sans'; color:#3230B0;">
+		<h4 >
+			{{this.userData.Question.length > 0 ? this.userData.Question[0].pertayaan : ''}}
+		</h4>
+		
+		<p>
+			{{this.userData.answerQ1[0]}}
+		</p>
 	</div>
+	</ion-slide>
+	<ion-slide>
+		<div padding class="centerResult" style="font-family: 'Black Han Sans'; color:#3230B0;">
+		<h4 >
+			{{this.userData.Question.length > 0 ? this.userData.Question[1].pertayaan : ''}}
+		</h4>
+		
+		<p>
+			{{this.userData.answerQ1[1]}}
+		</p>
+	</div>
+	</ion-slide>
+	<ion-slide>
+		<div padding class="centerResult" style="font-family: 'Black Han Sans'; color:#3230B0;">
+		<h4 >
+			{{this.userData.Question.length > 0 ? this.userData.Question[2].pertayaan : ''}}
+		</h4>
+		
+		<p>
+			{{this.userData.answerQ1[2]}}
+		</p>
+	</div>
+	</ion-slide>
+	<ion-slide>
+		<div padding class="centerResult" style="font-family: 'Black Han Sans'; color:#3230B0;">
+		<h4 >
+			{{this.userData.Question.length > 0 ? this.userData.Question[3].pertayaan : ''}}
+		</h4>
+		
+		<p>
+			{{this.userData.answerQ1[3]}}
+		</p>
+	</div>
+	</ion-slide>
+	<ion-slide>
+		<div padding class="centerResult" style="font-family: 'Black Han Sans'; color:#3230B0;">
+		<h4 >
+			{{this.userData.Question.length > 0 ? this.userData.Question[4].pertayaan : ''}}
+		</h4>
+		
+		<p>
+			{{this.userData.answerQ1[4]}}
+		</p>
+	</div>
+	</ion-slide>
+</ion-slides>
+
 </ion-content>
 <ion-footer>
   <div class="btn-wrapper">
-    <button  style="font-family:'Bowlby One SC';" class="btnDone" ion-button block>Selesai</button>
+    <button  style="font-family:'Bowlby One SC';" class="btnDone" (click)="exitApp()" ion-button block>Selesai</button>
   </div>
 </ion-footer>

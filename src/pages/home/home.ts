@@ -16,12 +16,22 @@ export class HomePage {
 
   }
   addTask(){
-    if (this.taskName.length > 0){
+    if (this.taskName == " "){
+      let msg = "Tidak Boleh Kosong";
+      let alert = this.alertCtrl.create({
+        title:"Warning",
+        message:msg,
+        buttons:["OK"]
+      });
+      alert.present();
+      
+    } else{
       let task = this.taskName;
       this.userData.userdata.push(task);
       this.taskName = "";
     }
   }
+
   deleteTask(index){
     this.taskList.splice(index, 1);
 }
