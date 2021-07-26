@@ -22,9 +22,6 @@ export class Story2Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Story2Page');
   }
-  ionViewWillEnter() {
-    this.userData.GetStory();
- }
  PindahSlide3(){
   this.navCtrl.push(Slide3Page);
 }

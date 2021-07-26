@@ -10,13 +10,13 @@ import { UserProvider } from '../../providers/user/user';
 })
 export class HomePage {
   public taskList=[];
-  public taskName: string = " ";
+  public taskName: string = "";
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController, public userData : UserProvider) {
 
   }
   addTask(){
-    if (this.taskName == " "){
+    if (this.taskName.length < 1){
       let msg = "Tidak Boleh Kosong";
       let alert = this.alertCtrl.create({
         title:"Warning",

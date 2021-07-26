@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, NavController } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
@@ -22,6 +22,8 @@ import { Typeoption2Page } from '../pages/typeoption2/typeoption2';
 import { Story2Page } from '../pages/story2/story2';
 import { Typeoption3Page } from '../pages/typeoption3/typeoption3';
 import { Story3Page } from '../pages/story3/story3';
+import { Story4Page } from '../pages/story4/story4';
+import { Typeoption4Page } from '../pages/typeoption4/typeoption4';
 
 
 @NgModule({
@@ -40,7 +42,10 @@ import { Story3Page } from '../pages/story3/story3';
     Story1Page,
     Story2Page,
     Story3Page,
-    Typeoption3Page
+    Story4Page,
+    Typeoption3Page,
+    Typeoption4Page,
+    
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,9 @@ import { Story3Page } from '../pages/story3/story3';
     Story1Page,
     Story2Page,
     Story3Page,
-    Typeoption3Page
+    Story4Page,
+    Typeoption3Page,
+    Typeoption4Page
   ],
   providers: [
     StatusBar,

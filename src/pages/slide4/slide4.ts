@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Slide5Page } from '../slide5/slide5';
 import { UserProvider } from '../../providers/user/user';
+import { Typeoption4Page } from '../typeoption4/typeoption4';
 
 /**
  * Generated class for the Slide4Page page.
@@ -29,7 +30,7 @@ export class Slide4Page {
   }
   pushAnswer(index){
     this.userData.answerQ1.push(this.userData.userdata[index]);
-    this.navCtrl.push(Slide5Page);
+    this.navCtrl.push(Typeoption4Page);
   }
   
 
